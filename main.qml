@@ -2,7 +2,6 @@ import QtQuick 2.12
 import QtQuick.Controls 2.5
 import QtQuick.Window 2.0
 
-
 ApplicationWindow {
     id: window
     visible: true

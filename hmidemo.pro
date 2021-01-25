@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = hmidemo
-QT += quick quickcontrols2
+QT += quickcontrols2
 
 CONFIG += c++11
 
