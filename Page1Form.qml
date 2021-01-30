@@ -24,7 +24,7 @@ Page {
     RoundButton {
         id: buttonShutdown
         x: 709
-        y: 200
+        y: 100
         width: 70
         height: 71
         text: "+"
@@ -37,6 +37,25 @@ Page {
         }
         onClicked: {
             LocalDevice.powerOff()
+        }
+    }
+
+    RoundButton {
+        id: buttonTerminal
+        x: 709
+        y: 200
+        width: 70
+        height: 71
+        text: "+"
+        display: AbstractButton.IconOnly
+        Image {
+            id: terminal
+            source: "terminal.png"
+            height: 71
+            width: 70
+        }
+        onClicked: {
+            LocalDevice.terminal()
         }
     }
 

@@ -19,6 +19,7 @@ public:
 public Q_SLOTS:
     void reboot();
     void powerOff();
+    void terminal();
 };
 
 #endif // QLOCALDEVICE_H

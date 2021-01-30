@@ -1,3 +1,4 @@
+#include <QCoreApplication>
 #include "qlocaldevice.h"
 #include <unistd.h>
 #include <sys/reboot.h>
@@ -39,4 +40,12 @@ void QLocalDevice::powerOff()
     ::reboot(RB_POWER_OFF);
     system("shutdown now");
     qWarning("powerOff returned");
+}
+
+void QLocalDevice::terminal()
+{
+    qDebug() << "Entering Function Name: " << Q_FUNC_INFO;
+    sync();
+    QCoreApplication::quit();
+    qWarning("terminal returned");
 }
